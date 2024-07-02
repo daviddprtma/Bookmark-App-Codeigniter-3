@@ -8,15 +8,15 @@
     <h1>Register</h1>
     <?php echo validation_errors(); ?>
     <?php echo form_open('users/register'); ?>
-    <div class="form-group">
+    <div class="form-group" style="width: 200px; height: 100px;">
     <label for="exampleInputEmail1">Username</label>
     <input type="text" name="username" class="form-control" aria-describedby="emailHelp">  
   	</div>
-	<div class="form-group">
+	<div class="form-group" style="width: 200px; height: 100px;">
     <label for="exampleInputEmail1">Email</label>
     <input type="email" name="email" class="form-control" aria-describedby="emailHelp">  
   	</div>
-	<div class="form-group">
+	<div class="form-group" style="width: 200px; height: 100px;">
 		<label for="exampleInputPassword1">Password</label>
 		<input type="password" name="password" class="form-control" id="exampleInputPassword1">
 	</div>
