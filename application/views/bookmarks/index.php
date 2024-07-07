@@ -8,6 +8,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.13.6/underscore-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.0/backbone-min.js"></script>
     <script src="<?php echo base_url('assets/js/app.js'); ?>"></script>
+	<style type="text/css">
+		/* Pagination styles */
+.pagination {
+	display: flex;
+	padding: 1em 0;
+}
+
+.pagination a,
+.pagination strong {
+	border: 1px solid silver;
+	border-radius: 8px;
+	color: black;
+	padding: 0.5em;
+	margin-right: 0.5em;
+	text-decoration: none;
+}
+
+.pagination a:hover,
+.pagination strong {
+	border: 1px solid #008cba;
+	background-color: #008cba;
+	color: white;
+}
+	</style>
 </head>
 <body>
 	<h1>Bookmarks</h1>
@@ -59,6 +83,7 @@
   </tbody>
 </table>
 	<nav aria-label="Page navigation example">
+	<div class="pagination">
 	<ul class="pagination justify-content-end">
 		<li class="page-item"> 
 		<?php if(isset($links)) { ?>
@@ -66,6 +91,7 @@
 		<?php } ?>
 		</li>
 	</ul>
+	</div>
 	</nav>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
